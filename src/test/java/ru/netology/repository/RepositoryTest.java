@@ -19,11 +19,9 @@ class RepositoryTest {
     void shouldAddProductAndFindAll() {
 
         repository.save(one);
-        repository.save(two);
         repository.save(three);
-        repository.save(four);
 
-        Product[] expected = new Product[]{one, two, three, four};
+        Product[] expected = new Product[]{one, three};
         Product[] actual = repository.findAll();
 
         assertArrayEquals(expected, actual);
