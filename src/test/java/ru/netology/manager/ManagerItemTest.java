@@ -5,11 +5,13 @@ import org.junit.jupiter.api.Test;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
+import ru.netology.repository.Repository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ManagerItemTest {
-    ManagerItem manager = new ManagerItem();
+    Repository repository = new Repository();
+    ManagerItem manager = new ManagerItem(repository);
     Book one = new Book(1, "10 негритят", 300, "Агата Кристи");
     Book two = new Book(2, "Происхождение", 600, "Дэн Браун");
     Book three = new Book(3, "Код Да Винчи", 500, "Дэн Браун");

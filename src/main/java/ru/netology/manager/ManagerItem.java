@@ -7,9 +7,10 @@ import ru.netology.repository.Repository;
 
 
 public class ManagerItem {
-    Repository repository = new Repository();
+    private Repository repository;
 
-    public ManagerItem() {
+    public ManagerItem(Repository repository) {
+        this.repository = repository;
     }
 
     public void add(Product item) {
