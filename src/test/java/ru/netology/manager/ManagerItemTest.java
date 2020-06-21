@@ -10,7 +10,7 @@ import ru.netology.repository.Repository;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ManagerItemTest {
-    private Repository repository;
+    Repository repository;
     ManagerItem manager = new ManagerItem(repository);
     Book one = new Book(1, "10 негритят", 300, "Агата Кристи");
     Book two = new Book(2, "Происхождение", 600, "Дэн Браун");
